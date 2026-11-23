@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://youtu.be/5DudqhS3Blw" title="Assistir ao tutorial do contador de espectadores multistream no YouTube">
-    <img src="contador%20de%20espectadores%20pequeno%281%29.jpg" alt="Tutorial: contador de espectadores multistream — 2 versões compactas" width="900">
+    <img src="capa-tutorial-botriquis.jpg" alt="Tutorial: contador de espectadores multistream — 2 versões compactas" width="900">
   </a>
 </p>
 
