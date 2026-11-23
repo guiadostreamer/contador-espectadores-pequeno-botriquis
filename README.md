@@ -41,7 +41,7 @@ Visual preto com baixa opacidade, ideal para quem prefere um contador mais discr
 - Animação discreta na mudança dos valores e preferência `prefers-reduced-motion` respeitada.
 - Sem conta extra, API própria, token ou conexão paralela aos chats.
 
-O Facebook está **preparado no CSS**: quando a Streamlabs inserir uma plataforma identificada como `facebook` ou `facebook_account`, o ícone azul com “f” branco será exibido. Essa integração ainda precisa de validação com uma conta Facebook conectada.
+O Facebook está **preparado no CSS**: quando a Streamlabs inserir uma plataforma identificada como `facebook` ou `facebook_account`, o ícone azul com “f” branco será exibido.
 
 ## Como funciona
 
@@ -142,4 +142,4 @@ Repositório público **não** significa domínio público nem licença de softw
 
 Streamlabs, Kick, Twitch, YouTube, Facebook e demais marcas, produtos, ícones e serviços pertencem aos respectivos titulares. O projeto é independente e não implica afiliação ou endosso oficial.
 
-A sintaxe de `js.txt` foi verificada; o algoritmo de leitura, soma, inicialização, observação e animação foi alinhado ao Square Total, previamente testado ao vivo pelo autor. **Essa equivalência não substitui um teste ao vivo específico do Botriquis.** A edição preserva o visual previamente aprovado, com logo do Facebook ainda não testado em uma conta conectada. O projeto pode exigir validação adicional na Streamlabs/OBS conforme integrações e atualizações das plataformas.
+O Botriquis foi **testado ao vivo pelo autor**. Sua lógica de leitura, soma, inicialização, observação e animação está alinhada ao Square Total, também validado em transmissão ao vivo pelo Guia do Streamer. O funcionamento e a disponibilidade dos dados dependem das integrações oferecidas pela Streamlabs e podem variar após atualizações da plataforma.
