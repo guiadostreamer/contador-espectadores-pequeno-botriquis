@@ -1,0 +1,33 @@
+<!--
+ BOTRIQUIS — CONTADOR DE ESPECTADORES
+ Edição refinada para visual translúcido horizontal
+ Autor: Leonardo — Guia do Streamer
+ Implementação técnica com auxílio de Inteligência Artificial.
+
+ Premissa do projeto:
+ - Preserva a mecânica nativa do widget "Contador de espectadores" da Streamlabs.
+ - A Streamlabs continua criando os itens de plataforma no #platform_container.
+ - Este código personaliza apenas a estrutura visual e o cálculo do total.
+-->
+<div id="viewer_widget" aria-label="Contador de espectadores Botriquis">
+  <div class="botriquis-shell">
+    <div class="botriquis-capsule">
+      <div id="platform_container" class="botriquis-platforms"></div>
+
+      <div class="botriquis-total" title="Total de espectadores">
+        <span id="total_count" aria-live="polite">0</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Template que a Streamlabs usa para montar cada plataforma selecionada -->
+<script type="text/template" id="platform_item">
+  <span class="platform-item platform-{platform}" id="{platform}_container" style="font: {font_weight} {font_size} {font};">
+    <span class="platform-brand" aria-hidden="true">
+      <i class="icon-{platform} platform-icon" style="color:{platform_color};"></i>
+      <img class="platform-img" width="{font_size}" height="{font_size}" alt="">
+    </span>
+    <span class="{platform}-count platform-count platform-source-count" style="color:{font_color}"></span>
+  </span>
+</script>

@@ -1,0 +1,124 @@
+/*
+ BOTRIQUIS — CONTADOR DE ESPECTADORES
+ Autor: Leonardo — Guia do Streamer
+ Implementação técnica com auxílio de Inteligência Artificial.
+ Repositório oficial: https://github.com/guiadostreamer/contador-espectadores-pequeno-botriquis
+
+ Mecânica de atualização e soma alinhada ao Square Total do Guia do Streamer,
+ já validado ao vivo pelo autor. A Streamlabs fornece os dados nativos.
+*/
+(function () {
+  let initialized = false;
+  let displayedTotal = null;
+  let animationFrame = null;
+
+  function readCount(value) {
+    const text = String(value || "").trim().toLowerCase();
+    const suffix = text.slice(-1);
+    const match = text.match(/[\d.,]+/);
+
+    if (!match) return 0;
+
+    if (suffix === "k" || suffix === "m") {
+      const decimal = parseFloat(match[0].replace(",", ".")) || 0;
+      return Math.round(decimal * (suffix === "k" ? 1000 : 1000000));
+    }
+
+    return parseInt(match[0].replace(/\D/g, ""), 10) || 0;
+  }
+
+  function restartEffect(element, duration) {
+    if (!element) return;
+
+    element.classList.remove("value-changed");
+    void element.offsetWidth;
+    element.classList.add("value-changed");
+
+    setTimeout(function () {
+      element.classList.remove("value-changed");
+    }, duration);
+  }
+
+  function showTotal(nextTotal) {
+    const output = document.getElementById("total_count");
+    if (!output || nextTotal === displayedTotal) return;
+
+    if (displayedTotal === null) {
+      displayedTotal = nextTotal;
+      output.textContent = nextTotal.toLocaleString("pt-BR");
+      return;
+    }
+
+    const currentShown = readCount(output.textContent);
+    const startTotal = Number.isFinite(currentShown) ? currentShown : displayedTotal;
+    const difference = nextTotal - startTotal;
+    const startedAt = performance.now();
+    const duration = 420;
+
+    cancelAnimationFrame(animationFrame);
+    restartEffect(output, 500);
+
+    function frame(now) {
+      const progress = Math.min((now - startedAt) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(startTotal + difference * eased);
+
+      output.textContent = current.toLocaleString("pt-BR");
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(frame);
+      } else {
+        displayedTotal = nextTotal;
+      }
+    }
+
+    animationFrame = requestAnimationFrame(frame);
+  }
+
+  function updateViewerCount() {
+    const container = document.getElementById("platform_container");
+    if (!container) return;
+
+    const counters = container.querySelectorAll(".platform-source-count");
+    let total = 0;
+
+    counters.forEach(function (counter) {
+      const nextValue = readCount(counter.textContent);
+      const previousValue = counter.dataset.viewerValue;
+
+      if (previousValue !== undefined && Number(previousValue) !== nextValue) {
+        restartEffect(counter.closest(".platform-item"), 500);
+      }
+
+      counter.dataset.viewerValue = String(nextValue);
+      total += nextValue;
+    });
+
+    showTotal(total);
+  }
+
+  function initializeViewerCount() {
+    if (initialized) return;
+
+    const container = document.getElementById("platform_container");
+    if (!container) return;
+
+    initialized = true;
+
+    const observer = new MutationObserver(updateViewerCount);
+    observer.observe(container, {
+      childList: true,
+      subtree: true,
+      characterData: true
+    });
+
+    updateViewerCount();
+  }
+
+  document.addEventListener("onLoad", initializeViewerCount);
+  document.addEventListener("DOMContentLoaded", initializeViewerCount);
+
+  if (document.readyState !== "loading") {
+    initializeViewerCount();
+  }
+})();

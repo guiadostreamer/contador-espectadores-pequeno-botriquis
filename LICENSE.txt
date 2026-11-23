@@ -1,0 +1,95 @@
+LICENÇA DE USO GRATUITO COM RESTRIÇÕES
+BOTRIQUIS — CONTADOR DE ESPECTADORES TRANSLÚCIDO
+
+Versão da licença: 1.0
+Data: 11 de novembro de 2026
+Projeto: Botriquis v1.0.0
+Repositório oficial: https://github.com/guiadostreamer/contador-espectadores-pequeno-botriquis
+
+Copyright © 2026 Leonardo — Guia do Streamer.
+Todos os direitos reservados.
+
+Autoria, conceito, direção criativa, personalização, testes e publicação:
+Leonardo — Guia do Streamer.
+Desenvolvimento técnico realizado com auxílio de Inteligência Artificial.
+
+1. OBJETO E ESCOPO
+
+Esta licença aplica-se à edição Botriquis — Contador de Espectadores
+Translúcido, incluindo HTML, CSS, JavaScript, documentação, identidade
+visual, ajustes, efeitos e arquivos disponibilizados no repositório oficial.
+Não se aplica automaticamente a outros projetos do Guia do Streamer.
+O projeto é disponibilizado para uso gratuito nas condições abaixo.
+Ele NÃO é colocado em domínio público nem concedido sob uma licença
+open source que permita redistribuição livre.
+
+2. USOS PERMITIDOS
+
+É concedida licença pessoal, gratuita, não exclusiva e intransferível para:
+
+a) instalar e utilizar o widget em transmissões pessoais, comerciais ou
+   monetizadas, em Streamlabs e fontes de navegador compatíveis;
+b) ajustar cores, tamanho, espaçamentos, posicionamento e outros detalhes
+   para uso próprio nas transmissões;
+c) modificar o código para uso próprio, inclusive com apoio de ferramentas
+   de Inteligência Artificial;
+d) exibir o widget funcionando em lives, vídeos, gravações e imagens da
+   transmissão do próprio usuário;
+e) indicar outras pessoas ao repositório ou publicação oficial do autor.
+
+3. RESTRIÇÕES
+
+Sem autorização prévia e escrita de Leonardo — Guia do Streamer, é proibido:
+
+a) redistribuir, republicar, compartilhar ou disponibilizar os arquivos,
+   integralmente ou em parte, em outros sites, repositórios, fóruns,
+   pacotes, grupos, vídeos, serviços de armazenamento ou plataformas;
+b) criar espelhos, reuploads, cópias públicas, downloads alternativos,
+   packs ou coleções contendo o projeto;
+c) vender, revender, sublicenciar, alugar ou explorar comercialmente os
+   arquivos como produto, serviço, pacote, curso ou template;
+d) publicar ou distribuir versões modificadas, adaptações ou trabalhos
+   substancialmente derivados do código ou da apresentação do projeto;
+e) remover, ocultar ou alterar avisos de autoria, licença ou créditos;
+f) atribuir a si ou a terceiros a autoria do código ou do projeto;
+g) sugerir endosso, parceria ou afiliação oficial com Guia do Streamer,
+   Streamlabs ou plataformas de transmissão sem autorização.
+
+4. MODIFICAÇÕES PARA USO PRÓPRIO
+
+O usuário pode modificar os arquivos apenas para utilização em suas próprias
+transmissões. Essa permissão não autoriza publicação, redistribuição,
+comercialização ou fornecimento da versão modificada a terceiros.
+
+5. COMPARTILHAMENTO CORRETO
+
+Para indicar o Botriquis a outras pessoas, compartilhe exclusivamente o
+link do repositório ou da publicação oficial do Guia do Streamer.
+
+6. DIREITOS DE TERCEIROS
+
+Os direitos de marcas, logos e serviços de Streamlabs, Twitch, Kick,
+YouTube e demais plataformas pertencem aos respectivos titulares.
+Esta licença não pretende conceder direitos sobre ativos de terceiros.
+
+7. AUSÊNCIA DE GARANTIAS
+
+O software é fornecido no estado em que se encontra, sem garantias de
+compatibilidade permanente, disponibilidade, adequação a uso específico
+ou ausência de falhas. Alterações da Streamlabs, OBS, navegadores ou
+plataformas podem afetar seu funcionamento.
+
+8. VIGÊNCIA E AUTORIZAÇÕES
+
+O uso fora dos termos aqui concedidos depende de autorização prévia e
+escrita do titular. O descumprimento pode encerrar a permissão de uso,
+sem prejuízo dos direitos legais aplicáveis.
+
+9. ACEITAÇÃO
+
+Ao copiar, instalar ou usar o projeto, o usuário declara aceitar estes
+termos. Se não concordar, não deverá usar os arquivos.
+
+Projeto: Botriquis — v1.0.0
+Autor: Leonardo — Guia do Streamer
+Copyright © 2026. Todos os direitos reservados.
