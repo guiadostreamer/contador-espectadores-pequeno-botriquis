@@ -7,6 +7,20 @@
 **Versão:** `v1.0.0` — 11 de novembro de 2026.  
 **Repositório oficial:** https://github.com/guiadostreamer/contador-espectadores-pequeno-botriquis
 
+## Vídeo tutorial oficial
+
+<p align="center">
+  <a href="https://youtu.be/5DudqhS3Blw" title="Assistir ao tutorial do contador de espectadores multistream no YouTube">
+    <img src="contador%20de%20espectadores%20pequeno%281%29.jpg" alt="Tutorial: contador de espectadores multistream — 2 versões compactas" width="900">
+  </a>
+</p>
+
+<p align="center">
+  <strong>▶ Clique na capa para assistir ao tutorial completo no YouTube.</strong>
+</p>
+
+**Link direto:** https://youtu.be/5DudqhS3Blw
+
 ## Prévia das duas versões
 
 O Botriquis possui **duas opções visuais**, permitindo escolher o estilo que melhor combina com o cenário da transmissão.
@@ -123,6 +137,7 @@ contador-espectadores-pequeno-botriquis/
 ├── js.txt                                # Observação e soma do contador
 ├── preview-botriquis-claro.png           # Prévia da versão clara
 ├── preview-botriquis-preto-transparente.png # Prévia da versão preta
+├── contador de espectadores pequeno(1).jpg  # Capa clicável do vídeo tutorial
 ├── README.md                             # Apresentação e instalação
 ├── LICENSE.txt                           # Licença de uso gratuito com restrições
 └── CHANGELOG.md                          # Histórico de versões
